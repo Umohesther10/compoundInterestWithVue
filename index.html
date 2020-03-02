@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>Compound Interest Calculator</title>
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+            <h1 style="text-align: center;">COMPOUND INTEREST CALCULATOR</h1>
+                <label class="button">Principal:</label>
+                <input class="increase" type="number" placeholder="initial principal amount" v-model="principal"><br>
+                <label class="button">Interest Rate:</label>
+                <input class="increase" type="number" placeholder="interest rate" v-model="rate"><br>
+                <label class="button">Number of times:</label>
+                <input  class="increase"type="number" placeholder="number of times interest applied" v-model="numberOfTimes"><br>
+                <label class="button">Time interest compounded:</label>
+                <input class="increase" type="number" placeholder="number of time periods elapsed" v-model="timePeriods"><br>
+            <p id="center">The Compound Interest is ₦ {{compoundInterest()}}</p> 
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
